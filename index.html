@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSSnippets</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+		<link href="./styles.css" rel="stylesheet" type='text/css'>
+		<script type="text/javascript" src="./jquery-1.9.1.min.js"></script>
+		<script type='text/javascript' src="./main.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1 id="title">CSSnippets</h1>
+			<nav>
+				<a id="shadowsNav">Shadows</a>
+				<a id="buttonsNav">Buttons</a>
+				<a id="gradientsNav">Gradients</a>
+				<a id="opacityNav">Opacity</a>
+				<a id="roundedNav">Rounded Corners</a>
+				<a id="columnsNav">Columns</a>
+				<a id="inputsNav">Text Inputs</a>
+			</nav>
+		</header>
+		<div id="homePage" class="page">
+			<div id="intro">
+				<h2>Hi There!</h2>
+				<p>Welcome to CSSnippets. Here you will find some very basic, but useful styles. Simply click on any style you like, and the code for that element will<br>be revealed. Take a look around!</p>
+			</div>
+		</div>
+		<section id="shadowsPage" class="page">
+			<div class="wrapper">
+				<div class="justifiedRow">
+					<div id="topShadowBox" class="shadowBox topShadow">
+						<p style="margin-top:40px;">Top<br>Shadow</p>
+					</div>
+					<div id="bottomShadowBox" class="shadowBox bottomShadow">
+						<p style="margin-top:40px;">Bottom<br>Shadow</p>
+					</div>
+					<div id="leftShadowBox" class="shadowBox leftShadow">
+						<p style="margin-top:40px;">Left<br>Shadow</p>
+					</div>
+					<div id="rightShadowBox" class="shadowBox rightShadow">
+						<p style="margin-top:40px;">Right<br>Shadow</p>
+					</div>
+					<div id="entireShadowBox" class="shadowBox wholeShadow">
+						<p style="margin-top:40px;">Whole Box<br>Shadow</p>
+					</div>
+				</div>
+				<div class="justifiedRow">
+					<div id="topInsetShadowBox" class="shadowBox topInsetShadow">
+						<p>Top<br>Inset<br>Shadow</p>
+					</div>
+					<div id="bottomInsetShadowBox" class="shadowBox bottomInsetShadow">
+						<p>Bottom<br>Inset<br>Shadow</p>
+					</div>
+					<div id="leftInsetShadowBox" class="shadowBox leftInsetShadow">
+						<p>Left<br>Inset<br>Shadow</p>
+					</div>
+					<div id="rightInsetShadowBox" class="shadowBox rightInsetShadow">
+						<p>Right<br>Inset<br>Shadow</p>
+					</div>
+					<div id="entireInsetShadowBox" class="shadowBox wholeInsetShadow">
+						<p>Whole Box<br>Inset<br>Shadow</p>
+					</div>
+				</div>
+				<div id="shadowCode">
+					<pre id="topCode" class="shadowSelected"><code>.topShadow {
+    box-shadow: 0 -4px 4px -2px rgba(0,0,0,0.6);
+}</code></pre>
+					<pre id="bottomCode" class="defaultHidden"><code>.bottomShadow {
+    box-shadow: 0 4px 4px -2px rgba(0,0,0,0.6);
+}</code></pre>
+					<pre id="leftCode" class="defaultHidden"><code>.leftShadow {
+    box-shadow: -4px 0 4px -2px rgba(0,0,0,0.6);
+}</code></pre>
+					<pre id="rightCode" class="defaultHidden"><code>.rightShadow {
+    box-shadow: 4px 0 4px -2px rgba(0,0,0,0.6);
+}</code></pre>
+					<pre id="entireBoxCode" class="defaultHidden"><code>.wholeShadow {
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.6);
+}</code></pre>
+					<pre id="topInsetCode" class="defaultHidden"><code>.topInsetShadow {
+    box-shadow: inset 0 4px 4px -2px rgba(0,0,0,0.4);
+}</code></pre>
+					<pre id="bottomInsetCode" class="defaultHidden"><code>.bottomInsetShadow {
+    box-shadow: inset 0 -4px 4px -2px rgba(0,0,0,0.4);
+}</code></pre>
+					<pre id="leftInsetCode" class="defaultHidden"><code>.leftInsetShadow {
+    box-shadow: inset 4px 0 4px -2px rgba(0,0,0,0.4);
+}</code></pre>
+					<pre id="rightInsetCode" class="defaultHidden"><code>.rightInsetShadow {
+    box-shadow: inset -4px 0 4px -2px rgba(0,0,0,0.4);
+}</code></pre>
+					<pre id="entireBoxInsetCode" class="defaultHidden"><code>.wholeInsetShadow {
+    box-shadow: inset 0 0 5px 2px rgba(0,0,0,0.4);
+}</code></pre>
+				</div>
+			</div>
+		</section>
+		<section id="buttonsPage" class="page">
+			<div class="wrapper">
+				<div id="basicBtnCode" class="btnCode">
+					<pre><code>.btn {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+    border: none;
+    background: #277D91;
+}</code></pre>
+				</div>
+				<div id="allBtns">
+					<div class="row">
+						<button class="btn btn1">Button</button>
+						<button class="btn btn2">Button</button>
+						<button class="btn btn3">Button</button>
+					</div>
+					<div class="row">
+						<button class="btn btn4">Button</button>
+						<button class="btn btn5">Button</button>
+					</div>
+					<div class="row">
+						<button class="btn btn6">Button</button>
+						<button class="btn btn7">Button</button>
+						<button class="btn btn8">Button</button>
+					</div>
+				</div>
+				<div id="specialBtnCode" class="btnCode">
+					<pre id="btn1Code" class="buttonSelected"><code>.btn1 {
+  border-bottom: 
+    5px solid #1C5968;
+  padding: 10px 25px;
+}
+
+.btn1:active {
+  margin-top: 5px;
+  border-bottom: none;
+  background: #237082;
+}</code></pre>
+					<pre id="btn2Code" class="defaultHidden"><code>.btn2 {
+  padding: 40px 25px;
+  border-radius: 100%;
+  border-bottom: 
+    5px solid #1C5968;
+}
+
+.btn2:active {
+  margin-top: 5px;
+  border-bottom: none;
+  background: #237082;
+}</code></pre>
+					<pre id="btn3Code" class="defaultHidden"><code>.btn3 {
+  border-bottom: 
+    5px solid #1C5968;
+  padding: 10px 25px;
+  border-radius: 35px;
+}
+
+.btn3:active {
+  margin-top: 5px;
+  border-bottom: none;
+  background: #237082;
+}</code></pre>
+					<pre id="btn4Code" class="defaultHidden"><code>.btn4 {
+  border-radius: 35px;
+  border: 2px solid #277D91;
+  background: #277D91;
+  padding: 10px 25px;
+}
+
+.btn4:hover {
+  background-color: #2D8EA6;
+}
+
+.btn4:active {
+  background-color: #237082;
+}</code></pre>
+					<pre id="btn5Code" class="defaultHidden"><code>.btn5 {
+  background: #277D91;
+  padding: 10px 25px;
+}
+
+.btn5:hover {
+  background-color: #2D8EA6;
+}
+
+.btn5:active {
+  background-color: #237082;
+}</code></pre>
+					<pre id="btn6Code" class="defaultHidden"><code>.btn6 {
+  background: transparent;
+  padding: 10px 25px;
+  border: 2px solid #277D91;
+  -webkit-transition: 
+    all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn6:hover {
+  background-color: #277D91;
+}
+
+.btn6:active {
+  background-color: #1F6474;
+}</code></pre>
+					<pre id="btn7Code" class="defaultHidden"><code>.btn7 {
+  background: transparent;
+  padding: 10px 25px;
+  border: 2px solid #277D91;
+  position: relative;
+  z-index: 1;
+}
+
+.btn7:after {
+  -webkit-transition: 
+    all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #277D91;
+  z-index: -1;
+}
+
+.btn7:active:after {
+  background-color: #1F6474;
+}
+
+.btn7:hover:after {
+  width:100%;
+}</code></pre>
+					<pre id="btn8Code" class="defaultHidden"><code>.btn8 {
+  background: transparent;
+  padding: 10px 25px;
+  border: 2px solid #277D91;
+  position: relative;
+  z-index: 1;
+}
+.btn8:after, .btn8:before {
+  -webkit-transition: 
+    all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #277D91;
+  z-index: -1;
+}
+.btn8:hover:before {
+  width:45%;
+  margin-left: -45%;
+}
+.btn8:hover:after {
+  width:45%;
+}
+.btn8:active:before {
+  width:50%;
+  margin-left: -50%;
+}
+.btn8:active:after {
+  width:50%;
+}</code></pre>
+				</div>
+			</div>
+		</section>
+		<section id="gradientsPage" class="page">
+			<div class="wrapper">
+				<div id="gradientCode">
+					<pre id="topGradCode" class="gradCode gradientSelected"><code>.topGradient {
+    background-color: #d35400; /* Fallback color */
+    background-image: -webkit-linear-gradient(top, #d35400, #e67e22); 
+    background-image:    -moz-linear-gradient(top, #d35400, #e67e22);
+    background-image:      -o-linear-gradient(top, #d35400, #e67e22);
+    background-image:         linear-gradient(to bottom, #d35400, #e67e22);
+}</code></pre>
+					<pre id="bottomGradCode" class="gradCode defaultHidden"><code>.bottomGradient {
+    background-color: #d35400; /* Fallback color */
+    background-image: -webkit-linear-gradient(bottom, #d35400, #e67e22); 
+    background-image:    -moz-linear-gradient(bottom, #d35400, #e67e22);
+    background-image:      -o-linear-gradient(bottom, #d35400, #e67e22);
+    background-image:         linear-gradient(to top, #d35400, #e67e22);
+}</code></pre>
+					<pre id="leftGradCode" class="gradCode defaultHidden"><code>.leftGradient {
+    background-color: #d35400; /* Fallback color */
+    background-image: -webkit-linear-gradient(left, #d35400, #e67e22); 
+    background-image:    -moz-linear-gradient(left, #d35400, #e67e22);
+    background-image:      -o-linear-gradient(left, #d35400, #e67e22);
+    background-image:         linear-gradient(to right, #d35400, #e67e22);
+}</code></pre>
+					<pre id="rightGradCode" class="gradCode defaultHidden"><code>.rightGradient {
+    background-color: #d35400; /* Fallback color */
+    background-image: -webkit-linear-gradient(right, #d35400, #e67e22); 
+    background-image:    -moz-linear-gradient(right, #d35400, #e67e22);
+    background-image:      -o-linear-gradient(right, #d35400, #e67e22);
+    background-image:         linear-gradient(to left, #d35400, #e67e22);
+}</code></pre>
+					<pre id="circleGradCode" class="gradCode defaultHidden"><code>.circleGradient {
+    background-color: #d35400; /* Fallback color */
+    background-image: -webkit-radial-gradient(center, #d35400, #e67e22 70%); 
+    background-image:    -moz-radial-gradient(center, #d35400, #e67e22 70%);
+    background-image:      -o-radial-gradient(center, #d35400, #e67e22 70%);
+    background-image:         radial-gradient(circle, #d35400, #e67e22 70%);
+}</code></pre>
+				</div>
+				<div id="gradientBoxes">
+					<div id="topGradBox" class="gradientBox topGradient">
+						<p>Top to Bottom<br>Gradient</p>
+					</div>
+					<div id="bottomGradBox" class="gradientBox bottomGradient">
+						<p>Bottom to Top<br>Gradient</p>
+					</div>
+					<div id="leftGradBox" class="gradientBox leftGradient">
+						<p>Left to Right<br>Gradient</p>
+					</div>
+					<div id="rightGradBox" class="gradientBox rightGradient">
+						<p>Right to Left<br>Gradient</p>
+					</div>
+					<div id="circleGradBox" class="gradientBox circleGradient">
+						<p>Radial<br>Gradient</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="opacityPage" class="page">
+			<div class="largeWrapper">
+				<div id="opacityBoxes">
+					<pre id="twentyFiveText" class="seventyFivePercent"><code>.twentyFivePercent {
+    opacity: 0.25;
+}</code></pre>
+					<pre id="fiftyText" class="fiftyPercent"><code>.fiftyPercent {
+    opacity: 0.5;
+}</code></pre>
+					<pre id="seventyFiveText" class="twentyFivePercent"><code>.seventyFivePercent {
+    opacity: 0.75;
+}</code></pre>
+					<pre id="oneHundredText" class="zeroPercent"><code>.oneHundredPercent {
+    opacity: 1;
+}</code></pre>
+					<div id="twentyFivePercentBox" class="opacityBox twentyFivePercent"></div>
+					<div id="fiftyPercentBox" class="opacityBox fiftyPercent"></div>
+					<div id="seventyFivePercentBox" class="opacityBox seventyFivePercent"></div>
+					<div id="oneHundredPercentBox" class="opacityBox oneHundredPercent"></div>
+				</div>
+			</div>
+		</section>
+		<section id="roundedPage" class="page">
+			<div class="wrapper">
+				<div class="justifiedRow">
+					<div class="roundedDiv upperLeftRound"><pre><code>.upperLeftRound {
+  border-top-left-radius:
+  25px;
+}</code></pre></div>
+					<div class="roundedDiv upperRightRound"><pre><code>.upperRightRound {
+  border-top-right-radius:
+  35px;
+}</code></pre></div>
+					<div class="roundedDiv lowerLeftRound"><pre><code>.lowerLeftRound {
+  border-bottom-left-radius:
+  35px;
+}</code></pre></div>
+					<div class="roundedDiv lowerRightRound"><pre><code>.lowerRightRound {
+ border-bottom-right-radius:
+  35px;
+}</code></pre></div>
+				</div>
+				<div class="justifiedRow">
+					<div class="roundedDiv topRounded"><pre><code>.topRounded {
+  border-radius:
+  35px 35px 0px 0px;
+}</code></pre></div>
+					<div class="roundedDiv bottomRounded"><pre><code>.bottomRounded {
+  border-radius:
+  0px 0px 35px 35px;
+}</code></pre></div>
+					<div class="roundedDiv allRounded"><pre><code>.allRounded {
+  border-radius: 35px;
+}</code></pre></div>
+					<div class="roundedDiv barrelRounded"><pre><code>.barrelRounded {
+  border-radius:40px/80px;
+}</code></pre></div>
+				</div>
+				<div class="justifiedRow">
+					<div class="roundedDiv topLeftBottomRight"><pre><code>.topLeftBottomRight {
+  border-radius: 60px 0px;
+}</code></pre></div>
+				<div class="roundedDiv circleRounded"><pre><code>.circleRounded {
+  border-radius: 100%;
+}</code></pre></div>
+					<div class="roundedDiv bottomLeftTopRight"><pre><code>.bottomLeftTopRight {
+  border-radius: 0px 60px;
+}</code></pre></div>
+				</div>
+			</div>
+		</section>
+		<section id="columnsPage" class="page">
+			<div class="wrapper">
+				<div id="columnsCodeBox"><pre><code>.columnsText {
+    -webkit-column-count: 3;
+    -webkit-column-gap:   20px;  
+    -moz-column-count:    3;
+    -moz-column-gap:      20px;
+    column-count:         3;
+    column-gap:           20px;
+}</code></pre>
+
+				</div>
+				<p class="columnsText">Kool-aid man mystique tinkerer steel speedball yellowjacket thor angela mohinder suresh alan scott morlun. Lizard metamorpho bizarro toad machine man speedy ironman hellboy anti-spawn big barda. Wonder girl dr manhattan speedy meltdown angela. Hawk stargirl, krypto cecilia reyes savage dragon arachne tempest, osiris two-face pyro omega red sif. Riddler dormammu songbird hal jordan superboy-prime hit-girl liz sherman sasquatch, agent zero ghost rider crystal hollow hercules forge. Hawkeye rick flag carnage ando masahashi shang-chi moonstone the cape elle bishop sunspot nite owl general zod. Red tornado frenzy doctor doom johann krauss astro boy bizarro curse ghost rider wildfire. Nite owl cypher green goblin chamber ares hawkeye mister freeze. Doomsday superboy-prime astro boy osiris deathstroke space ghost triplicate girl elastigirl monica dawson lyja. Catwoman wonder girl, hellcat, tigra flash gordon bumbleboy darkseid northstar omega red. Feral shrinking violet warlock red arrow sage moloch allan quatermain bumbleboy sub-mariner aztar mister fantastic. John wraith granny goodness, jolt machine man beta ray bill. Shang-chi goliath amazo black canary aquababy match firelord ando masahashi. Ammo cyborg superman goblin queen catwoman loki aztar. Tracy strauss titan thunderstrike sunspot mystique northstar junkpile. Northstar swamp thing franklin storm riddler junkpile superboy-prime, bomb queen adam monroe hit-girl darkseid shriek spider-girl doc samson warbird thunderstrike thunderstrike doctor octopus. Valerie hart vagabond master brood ego. Black widow black cat guy gardner stargirl wonder girl elongated man boomer bane angel jean grey.</p>
+			</div>
+		</section>
+		<section id="inputsPage" class="page">
+			<div id="inputsWrapper" class="wrapper">
+				<div class="row">
+					<input class="simpleInput" type="text" placeholder="Basic Input...">
+					<div id="simpleCodeBox"><pre>.simpleInput {
+   padding: 5px;
+   font-size: 20px;
+   border: solid 1px #542443;
+}</pre></div>
+				</div>
+				<div class="row">
+					<input class="glowInput" type="text" placeholder="Glowing Focus...">
+					<div id="glowCodeBox"><pre>.glowInput {
+   padding: 5px;
+   font-size: 20px;
+   border: solid 1px #542443;
+}
+
+.glowInput:focus {
+   box-shadow:
+   0 0 5px 2px rgba(0,0,0,0.6);
+}</pre></div>
+				</div>
+				<div class="row">
+					<input class="lineInput" type="text" placeholder="Just a Line...">
+					<div id="lineCodeBox"><pre>.lineInput {
+   padding: 5px;
+   font-size: 20px;
+   border: none;
+   border-bottom:
+     solid 1px #542443;
+   background-color:
+     transparent;
+}</pre></div>
+				</div>
+			</div>
+		</section>
+		<script>
+		  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  	ga('create', 'UA-46270175-1', 'jordnkr.github.io');
+		  	ga('send', 'pageview');
+		</script>
+	</body>
+</html>
